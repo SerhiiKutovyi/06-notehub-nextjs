@@ -14,7 +14,7 @@ function TanStackProvider({ children }: Props) {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        {children};
+        {children}
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </>

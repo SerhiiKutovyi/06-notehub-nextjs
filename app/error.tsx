@@ -4,12 +4,12 @@ type Props = {
   error: Error;
 };
 
-function Error({ error }: Props) {
+const Error = ({ error }: Props) => {
   return (
     <>
-      <h2>Помилка при завантаженні</h2>
-      <p>{error.message}</p>
+      <p>Could not fetch the list of notes. {error.message}</p>
     </>
   );
-}
+};
+
 export default Error;

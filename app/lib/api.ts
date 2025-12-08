@@ -64,7 +64,5 @@ export async function fetchNoteById(noteId: Note['id']) {
     },
   });
 
-  console.log(data);
-
   return data;
 }

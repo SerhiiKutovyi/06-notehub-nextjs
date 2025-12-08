@@ -18,10 +18,6 @@ function NoteList({ notes }: NoteListProps) {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['notes'] });
     },
-
-    onError: error => {
-      console.error(error);
-    },
   });
 
   return (

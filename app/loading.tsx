@@ -1,3 +1,8 @@
-export default function Loading() {
-  return <p>Завантаження нотатків...</p>;
+function Loading() {
+  return (
+    <>
+      <p>Loading, please wait...</p>
+    </>
+  );
 }
+export default Loading;
