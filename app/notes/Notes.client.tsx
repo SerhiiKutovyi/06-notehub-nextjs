@@ -24,7 +24,7 @@ function NotesClient() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const { data, isSuccess } = useQuery({
+  const { data, isSuccess, isLoading, error } = useQuery({
     queryKey: ['notes', page, search],
     queryFn: () => fetchNotes(page, search),
     placeholderData: keepPreviousData,
@@ -38,6 +38,8 @@ function NotesClient() {
   return (
     <div className={css.app}>
       <div className={css.toolbar}>
+        {error && !data && <p>Something went wrong.</p>}
+        {isLoading && <p>Loading, please wait...</p>}
         <SearchBox search={search} onChange={handelSearchBox} />
         {isSuccess && data && data.totalPages > 1 && (
           <Pagination
