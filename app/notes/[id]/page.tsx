@@ -1,4 +1,5 @@
 import { fetchNoteById } from '@/lib/api';
+
 import NoteDetailsClient from './NoteDetails.client';
 
 type Props = {
