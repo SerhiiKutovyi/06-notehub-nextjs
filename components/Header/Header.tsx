@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import css from './Header.module.css';
 
-export default function Header() {
+function Header() {
   return (
     <>
       <header className={css.header}>
@@ -14,7 +14,7 @@ export default function Header() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/notes">Notes</a>
+              <Link href="/notes">Notes</Link>
             </li>
           </ul>
         </nav>
@@ -22,3 +22,4 @@ export default function Header() {
     </>
   );
 }
+export default Header;

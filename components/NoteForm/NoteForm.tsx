@@ -1,12 +1,12 @@
 import { useId } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
-import { createNote } from '../../lib/api';
+import { createNote } from '@/lib/api';
 
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 import type { FormikHelpers } from 'formik';
-import type { FormValuesProps, NoteFormProps } from '../../types/form';
-import type { CreateNoteProps } from '../../lib/api';
+import type { FormValuesProps, NoteFormProps } from '@/types/form';
+import type { CreateNoteProps } from '@/lib/api';
 
 import * as Yup from 'yup';
 

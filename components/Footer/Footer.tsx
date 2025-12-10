@@ -1,6 +1,6 @@
 import css from './Footer.module.css';
 
-export default function Footer() {
+function Footer() {
   return (
     <>
       <footer className={css.footer}>
@@ -18,3 +18,4 @@ export default function Footer() {
     </>
   );
 }
+export default Footer;
