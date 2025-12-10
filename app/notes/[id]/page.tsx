@@ -1,5 +1,5 @@
 import { fetchNoteById } from '@/lib/api';
-import NoteDetailsClient from './NoteDetailsClient ';
+import NoteDetailsClient from './NoteDetails.client ';
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -12,3 +12,4 @@ async function NoteDetails({ params }: Props) {
   return <>{note && <NoteDetailsClient note={note} />}</>;
 }
 export default NoteDetails;
+
