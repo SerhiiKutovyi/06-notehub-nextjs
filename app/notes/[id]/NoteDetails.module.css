@@ -57,3 +57,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.loading {
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+}
+
+.error {
+  color: red;
+  padding: 40px;
+  text-align: center;
+  font-size: 18px;
+}
